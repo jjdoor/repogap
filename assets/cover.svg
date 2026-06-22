@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="420" fill="url(#bg)"/>
+  <rect width="1000" height="420" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <!-- subtle grid -->
+  <g stroke="#21262d" stroke-width="1">
+    <line x1="0" y1="105" x2="1000" y2="105"/>
+    <line x1="680" y1="0" x2="680" y2="420"/>
+  </g>
+
+  <!-- watermark -->
+  <text x="60" y="400" fill="#1d2530" font-size="14">README · LICENSE · .gitignore · CHANGELOG · package fields — one command, zero config</text>
+
+  <!-- terminal circles -->
+  <g>
+    <circle cx="936" cy="34" r="6" fill="#f85149"/>
+    <circle cx="958" cy="34" r="6" fill="#d29922"/>
+    <circle cx="980" cy="34" r="6" fill="#3fb950"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="60" y="118" font-size="64" font-weight="700" letter-spacing="-1">
+    <tspan fill="#79c0ff">repo</tspan><tspan fill="#56d364">gap</tspan>
+  </text>
+  <text x="62" y="156" font-size="21" fill="#8b949e">find what's missing before it matters</text>
+
+  <!-- output panel -->
+  <rect x="48" y="178" width="904" height="178" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- command -->
+  <text x="68" y="208" font-size="15" fill="#6e7681">$ <tspan fill="#8b949e">repogap</tspan></text>
+
+  <!-- file checks -->
+  <g font-size="16">
+    <text x="68" y="238"><tspan fill="#3fb950">✓</tspan> <tspan fill="#c9d1d9">README.md</tspan></text>
+    <text x="68" y="263"><tspan fill="#f85149">✗</tspan> <tspan fill="#c9d1d9">LICENSE</tspan>     <tspan fill="#f85149">  missing</tspan></text>
+    <text x="68" y="288"><tspan fill="#3fb950">✓</tspan> <tspan fill="#c9d1d9">.gitignore</tspan></text>
+    <text x="68" y="313"><tspan fill="#d29922">!</tspan> <tspan fill="#c9d1d9">CHANGELOG</tspan>   <tspan fill="#d29922">  missing (recommended)</tspan></text>
+  </g>
+
+  <!-- summary line -->
+  <text x="68" y="339" font-size="15" fill="#f85149">repodrift: drift detected — <tspan fill="#f85149">1 error</tspan><tspan fill="#6e7681">, </tspan><tspan fill="#d29922">1 warning</tspan></text>
+
+  <!-- install line -->
+  <text x="60" y="376" font-size="17" fill="#58a6ff">$ npx repogap <tspan fill="#6e7681">·</tspan> pip install repogap</text>
+</svg>
